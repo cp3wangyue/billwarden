@@ -85,7 +85,9 @@ python run_audit.py
 
 ## Demo
 
-See the Devpost submission for the demo video. The dashboard at `http://localhost:8619` shows the live agent event feed, the decisions panel, the quiet digest and the draft letters.
+🎬 **[Watch the 53-second demo video](demo/demo.mp4)** — recorded straight from the dashboard: run the weekly audit, watch the agent work bill by bill, then open one of the ready-to-send dispute letters.
+
+See the Devpost submission for the narrated version. The dashboard at `http://localhost:8619` shows the live agent event feed, the decisions panel, the quiet digest and the draft letters.
 
 ## Track
 
