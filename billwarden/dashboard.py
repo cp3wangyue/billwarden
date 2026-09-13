@@ -120,7 +120,7 @@ max-width:640px;white-space:pre-wrap;font:13.5px/1.6 Consolas,monospace;cursor:p
 </header>
 <div class="grid">
   <div>
-    <div class="card"><h2>Agent activity — live</h2><div class="feed" id="feed"><div class="idle">Press “Run weekly audit”. 6 new billing emails are waiting in the demo inbox.</div></div></div>
+    <div class="card"><h2>Agent activity — live</h2><div class="feed" id="feed"><div class="idle">Press “Run weekly audit”. 7 new billing emails are waiting in the demo inbox.</div></div></div>
     <div class="card" style="margin-top:16px"><h2>Quiet digest — no ping needed</h2><ul class="digest" id="digest"><li class="idle">nothing yet</li></ul></div>
   </div>
   <div>

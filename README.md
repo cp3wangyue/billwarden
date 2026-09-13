@@ -11,6 +11,8 @@ In the demo run, across 7 realistic household bills, BillWarden:
 
 That's **$100.29/month of recurring household money leaks** surfaced as three ready-to-send letters, with zero notification noise for everything that was actually fine.
 
+![BillWarden dashboard](docs/dashboard.png)
+
 ## Why "quiet by default"
 
 Bill fatigue is real: bill-paying apps blast a notification for every statement, so people mute them and miss the one bill that matters. BillWarden inverts the model — the agent decides *which* changes deserve your attention, using your household's own billing history as ground truth, and files everything else into a digest you read once a week.
