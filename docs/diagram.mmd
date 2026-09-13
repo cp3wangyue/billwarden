@@ -1,0 +1,25 @@
+flowchart LR
+    subgraph IN[Household inputs]
+        E[📧 Billing emails<br/>demo inbox]
+        H[🧾 Ledger<br/>SQLite 6mo history]
+    end
+    subgraph AGENT[BillWarden - Strands Agents SDK]
+        A[Strands Agent<br/>one run per bill<br/>parse/compare/judge/act/file]
+        M[Model provider<br/>HeuristicModel offline rules<br/>or Ollama / Bedrock LLM]
+        T[Tools<br/>parse_bill, get_bill_history,<br/>record_bill, raise_alert,<br/>add_digest_note, save_letter,<br/>archive_email]
+        A <-. tool calls .-> T
+        M === A
+    end
+    E --> A
+    H --> T
+    T --> O1[🚨 Alerts<br/>decisions waiting]
+    T --> O2[✉️ Draft letters]
+    T --> O3[🤫 Quiet digest<br/>no ping]
+    T --> O4[🗄️ Ledger updated]
+    O1 --> U[👨‍👩‍👧 Household<br/>one weekly review]
+    O2 --> U
+    O3 --> U
+    classDef agent fill:#1f6feb22,stroke:#1f6feb
+    classDef out fill:#3fb95015,stroke:#3fb950
+    class A,M,T agent
+    class O1,O2,O3,O4 out
