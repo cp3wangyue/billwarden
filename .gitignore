@@ -1,7 +1,3 @@
-__pycache__/
-*.pyc
-billwarden/data/runtime/
-billwarden/data/letters/
-billwarden/data/processed/
-*.db
-.DS_Store
+demo/
+*.wav
+*.tmp
